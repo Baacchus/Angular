@@ -1,0 +1,18 @@
+<div class="card">
+
+  <div class="card-header">
+    <img src={{user.photo}} alt="">
+  </div>
+  <div class="card-body">
+    <h2><span>Name : </span>{{user.name}}</h2>
+    <h2><span>Firstname : </span>{{user.firstName}}</h2>
+    <p [hidden]="hide">Age :{{user.age}}</p>
+    <label for="citatition">Quote : </label> 
+    <input type="text" [(ngModel)]="user.quote" name="citation" id="citation">
+  </div>
+  <div class="card-footer">
+    <button (click)="hide = !hide">Beer ?</button>
+    <h2>{{user.quote}}</h2>
+  </div>
+
+</div>

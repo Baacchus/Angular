@@ -10,6 +10,6 @@ export class SignUpComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    email: 'blala';
+    
   }
 }
