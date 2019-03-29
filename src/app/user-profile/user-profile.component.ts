@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from '../user';
+import { stringify } from '@angular/core/src/util';
 
 @Component({
   selector: 'app-user-profile',
@@ -16,7 +17,7 @@ export class UserProfileComponent implements OnInit {
     hide: true
   };
 
-  constructor() { }
+  constructor() {  }
 
   ngOnInit() {
   }
